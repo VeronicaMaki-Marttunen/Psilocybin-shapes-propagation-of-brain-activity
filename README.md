@@ -7,7 +7,7 @@ The code for functional connectivity analyses is included here.
 
 The code has been developed in MATLAB R2024b (Mathworks). In addition, FieldTrip should be in the path, as well as the BrainSpace Toolbox for the gradient analysis.
 
-The code loads the fMRI data in surface space.
+The code loads the fMRI data which should be in surface space.
 
 run_conn.m: creates FC matrix; calls calc_FC_function.m
 run_FCchange.m: calculates FC change between sessions
