@@ -4,3 +4,13 @@ Codes corresponding to the article "Psilocybin shapes the slow, global propagati
 The code for detection of travelling waves is provided as the BrainWaves Toolbox: https://github.com/VeronicaMaki-Marttunen/BrainWavesToolbox
 
 The code for functional connectivity analyses is included here.
+
+The code has been developed in MATLAB R2024b (Mathworks). In addition, FieldTrip should be in the path, as well as the BrainSpace Toolbox for the gradient analysis.
+
+The code loads the fMRI data in surface space.
+
+run_conn.m: creates FC matrix; calls calc_FC_function.m
+run_FCchange.m: calculates FC change between sessions
+run_gradients.m: calculates spatial gradients
+
+If you use this code, please cite Mäki-Marttunen, V. (2026) Communications Biology
