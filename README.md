@@ -13,4 +13,5 @@ run_conn.m: creates FC matrix; calls calc_FC_function.m
 run_FCchange.m: calculates FC change between sessions
 run_gradients.m: calculates spatial gradients
 
-If you use this code, please cite Mäki-Marttunen, V. (2026) Communications Biology
+If you use this code, please cite the source publication:
+Mäki-Marttunen, V. (2026) Communications Biology
