@@ -12,8 +12,8 @@ cii_3 = ft_read_cifti(inputfile,'readdata',1);
 dtser = cii_3.dtseries(1:32492*2,:);
 nandtser = isnan(dtser(:,1));
 dtser(nandtser,:) = [];
-
-epi1msk = FT_Filter_mulch3(dtser',[0.001 .05],'bandpass',1/tr_data)'; % temporally smoothing data
+nyquist = 1/(2*tr_data);
+epi1msk = FT_Filter_mulch2(dtser',[0.001 .05]/nyquist)';
 epi1msk = zscore(epi1msk')';
 gs_LR1 = mean(epi1msk); % calculate the global mean of input data
 
